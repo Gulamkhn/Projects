@@ -1,0 +1,108 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 450px;
+  margin: 50px auto;
+  background-color: rgb(244, 239, 239);
+  padding: 15px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  transition: 0.3s;
+}
+
+/* Container box shadow */
+.container {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #030914, 0 0 15px #030914, 0 0 25px #03e914,
+    0 0 100px #030914;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+/* *************************** */
+
+/* Text decoration of H1 */
+h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, rgb(253, 219, 0), #8888ce 35%, #e00a95);
+
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+/* H1 text decoration ends here */
+p {
+  margin-top: 0px;
+  font-weight: bolder;
+  color: brown;
+  font-size: 18px;
+  /* text-stroke */
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: brown;
+  /* ends-here */
+}
+.btn {
+  background-color: rgb(50, 178, 233);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#dice {
+  width: 90px;
+  height: 90px;
+  border: 4px solid grey;
+  font-size: 40px;
+  color: grey;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roll-dice {
+  animation-name: roll;
+  animation-duration: 0.2s;
+  animation-iteration-count: 6;
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
