@@ -1,0 +1,243 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    width: 90vw;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.top-header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav{
+    align-items: center;
+}
+
+.logo{
+    color: #ff385c;
+    height: 40px;
+}
+
+.details{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-btn{
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.border-left{
+    border-left: 1px solid lightgrey;
+    
+}
+
+.pl-20{
+    padding-left: 20px;
+}
+
+.home{
+    padding: 8px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.home:hover{
+    background-color: rgb(244, 240, 240);
+    border-radius: 40px;
+}
+
+
+
+.account-details{
+   display: flex;
+   align-items: center;
+}
+
+.user-menu{
+    margin-left: 10px;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+}
+
+.user{
+    height: 32px;
+    width: 32px;
+}
+.user-menu:hover {
+ box-shadow: 4px 4px lightgrey;
+}
+
+.nav-separation{
+    border-bottom: 1px solid lightgrey;
+}
+
+.bottom-header{
+    position: sticky;
+    top: 0;
+    /* background-color:red; */
+}
+
+.bottom-header-icon{
+    text-align: center;
+   
+}
+
+.bottom-header-icon img{
+    height: 23px;
+    filter: contrast(10%);
+}
+
+.bottom-header-icon:hover{
+    border-bottom: 3px solid lightgrey;
+}
+
+.bottom-header-icon img:hover{
+    filter: contrast(100%);
+}
+
+.bottom-header-icon p{
+    filter: contrast(30%);
+    margin: 0;
+    font-size: 13px;
+}
+
+.bottom-header-icon p:hover{
+    filter: contrast(100%);
+}
+
+
+.bottom-header{
+    padding: 10px 0;
+    display: flex;
+    gap:40px;
+}
+
+.filter{
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+}
+
+.filter-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+}
+
+.tax{
+    padding: 2px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.toggle{
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.toggle p{
+    font-size: 13px;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card{
+    margin: 20px 0;
+    width: 300px;
+    position: relative;
+    
+}
+
+.card-img{
+    width:100%;
+    height: 300px;
+    border-radius: 14px;
+    object-fit: cover;
+    
+    
+}
+
+.card p{
+    margin: 0;
+}
+
+.title{
+    font-size: 16px;
+}
+
+.common{
+    color: grey;
+    font-size: 14px;
+}
+
+.price{
+    padding-top: 5px;
+}
+
+.day-night{
+    color: grey;
+    font-size: 14px;
+}
+
+.heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    stroke: white;
+}
+
+
+
+
+.flex-rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer{
+    border-top: 1px solid lightgrey;
+    display: flex;
+    width: 90vw;
+    background-color: rgb(246, 246, 246);
+    align-items: center;
+    gap: 10px;
+    border-radius: 14px;
+}
+
