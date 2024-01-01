@@ -1,0 +1,93 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgba(0, 0, 0, 0.939);
+    margin: 0;
+}
+
+
+.container{
+    width: 700px;
+    margin: 26px auto;
+    color: white;
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+}
+
+::placeholder{
+    color: black;
+}
+
+input{
+    width: 75%;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    background-color: rgba(100, 62, 62, 0.635);
+    color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.btn{
+    width: 25%;
+    border-radius: 12px;
+    background-color:red;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Movie-container */
+
+.movie-container{
+    width: 700px;
+    margin: 26px auto; 
+    color: white;  
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.img{
+    position: relative;
+}
+
+.ratings{
+    position: absolute;
+    bottom: 0;
+    margin: 16px;
+    padding: 4px 12px;
+    background-color:#fff;
+    color: black;
+    border-radius: 6px;
+}
+
+
+.loading {
+    border: 8px solid red;
+    border-radius: 50%;
+    border-top: 8px solid #fff;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
